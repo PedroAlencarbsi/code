@@ -30,5 +30,12 @@
         @elseIF($name == "pedro")
         <P>O nome é {{$name}}, tem {{$age}} anos e é {{$profissao}} </P>
         @endif
+
+        @for ($i = 0; $i < count($arr); $i++)
+            <p>Numero é - {{$i}} </p>
+        @if($i == 3)
+            <p>O numero ta certo {{$i}}</p>
+        @endif
+        @endfor
     </body>
 </html>
