@@ -2,9 +2,6 @@
 
 @section('title', 'Teste')
 @section('content')
-    
-@endsection    
-
 <h1>Algum titulo</h1>
 <img src="/img/sana.jpg" alt="banner" srcset="">
 @if (10 > 15)
@@ -22,4 +19,7 @@
     <p>O numero ta certo {{$i}}</p>
 @endif
 @endfor
+
+@endsection    
+
 
