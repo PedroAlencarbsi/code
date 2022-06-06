@@ -1,8 +1,8 @@
 @extends('layouts.main')
 
 @section('title', 'Criar Evento')
-@section('content')
 
+@section('content')
 <div id="event-create-container" class="col-md-6 offset-md-3" >
     <h1>Crie seu Evento</h1>
     <form action="/events" method="POST">

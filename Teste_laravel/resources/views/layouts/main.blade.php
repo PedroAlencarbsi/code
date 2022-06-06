@@ -43,9 +43,17 @@
                 </div>
             </nav>
         </header>
-
-        @yield('content')
-    <footer>
+        <main>
+            <div class="content-fluyd">
+                <div class="row">
+                    @if (session('msg'))
+                        <p class="msg">{{session('msg')}}</p>
+                    @endif
+                </div>
+                @yield('content')
+            </div>
+        </main>
+    <footer class="footer">
         <p>Sana &copy; 2022</p>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
