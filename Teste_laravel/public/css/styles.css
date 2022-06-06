@@ -42,17 +42,19 @@ header{
 }
 
 #navbar{
+    display: flex;
     justify-content: space-between;
-    padding: 5px;
+    padding: 5px 0;
     background-color: white;
 }
 
 #navbar a{
-    font-size: 12px;
+    font-size: 14px;
     color: #757575;
 }
 
 #navbar a:hover{
+    font-size: 14px;
     color: plum;
 }
 
@@ -133,7 +135,7 @@ header{
 
 /* FOOTER */
 
-footer{
+footer {
     text-align: center;
     background-color: #353e48;
     color: white;
@@ -145,4 +147,22 @@ footer{
 
 footer p{
     margin-bottom: 0;
+}
+
+/* event create page*/
+
+#event-create-container{
+    padding: 30px;
+
+}
+
+#event-create-container label{
+    font-weight: bold;
+}
+
+#event-create-container input,
+#event-create-container select,
+#event-create-container textarea
+{
+    font-size: 12px;
 }

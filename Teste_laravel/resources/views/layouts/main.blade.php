@@ -21,7 +21,7 @@
     </head>
     <body>
         <header>
-            <nav class="navbar navbar-expand-lg navbar-light">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="collapse navbar-collapse" id="navbar">
                     <a href="/" class="navbar-brand">
                         <img src="/img/sana.jpg" alt="Sana">
@@ -46,7 +46,7 @@
 
         @yield('content')
     <footer>
-        <p>Teste &copy; 2022</p>
+        <p>Sana &copy; 2022</p>
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

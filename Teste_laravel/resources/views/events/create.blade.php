@@ -6,6 +6,7 @@
 <div id="event-create-container" class="col-md-6 offset-md-3" >
     <h1>Crie seu Evento</h1>
     <form action="/events" method="POST">
+        @csrf
         <div class="form-group">
             <label for="title">Evento:</label>
             <input type="text" class="form-control" name="title" id="title" placeholder="Nome do Evento">
@@ -25,7 +26,7 @@
             <label for="title">Descrição:</label>
             <textarea type="text" class="form-control" name="description" id="description" placeholder="Explique o Evento"></textarea>
         </div>
-        <input type="submit" class="btn btm-primary" value="Criar Evento">
+        <input type="submit" class="btn btn-primary" value="Criar Evento">
     </form>
 </div>
 @endsection
