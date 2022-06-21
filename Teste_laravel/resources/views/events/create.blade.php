@@ -27,8 +27,27 @@
             </select>    
         </div>
         <div class="form-group">
-            <label for="title">Descrição:</label>
-            <textarea type="text" class="form-control" name="description" id="description" placeholder="Explique o Evento"></textarea>
+        <label for="title">Descrição do Evento</label>
+        <div class="form-group">
+            <textarea name="description" placeholder="Escreva aqui a Descrição" class="form-control"></textarea>
+        </div>
+        <div class="form-group">
+            <label for="title">Adicione itens de infraestrutura:</label>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="Cadeiras" id=""> Cadeiras
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="Palco" id="">Palco
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="Cerveja Gratis" id="">Cerveja Gratis
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="Brindes" id="">Brindes
+            </div>
+            <div class="form-group">
+                <input type="checkbox" name="itens[]" value="Mesa" id="">Mesa
+            </div>
         </div>
         <input type="submit" class="btn btn-primary" value="Criar Evento">
     </form>
