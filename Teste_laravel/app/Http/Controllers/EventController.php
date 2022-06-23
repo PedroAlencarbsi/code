@@ -40,10 +40,11 @@ class EventController extends Controller
     {
         $event = new Event;
 
-        $event->title = $request ->title;
-        $event->city = $request ->city;
-        $event->private = $request ->private;
-        $event->description = $request ->description;
+        $event->title = $request->title;
+        $event->date = $request->date;
+        $event->city = $request->city;
+        $event->private = $request->private;
+        $event->description = $request->description;
         $event->itens = $request->itens;
 
         //image upload
