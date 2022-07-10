@@ -13,7 +13,7 @@
                 <h1>{{$event->title}}</h1>
                 <p class="event-city"> <ion-icon name="location-outline"></ion-icon>{{$event->city}}</p>
                 <p class="event-participants"> <ion-icon name="people-outline"></ion-icon>X Pessoas</p>                    
-                <p class="event-owner"> <ion-icon name="star-outline"></ion-icon>Dono do Evento</p>
+                <p class="event-owner"> <ion-icon name="star-outline"></ion-icon>{{$eventOwner['name']}}</p>
                 <p class="event-date"> <ion-icon name="time-outline"></ion-icon>{{date('d/m/Y', strtotime($event->date))}}</p>
                 <a href="#" class="btn btn-primary" id="event-submit">Confirmar Presença</a>
                 <h3>O evento conta com:</h3>
@@ -24,7 +24,7 @@
                 </ul>                    
             </div>
             <div class="col-md-12" id="description-container">
-                <h3>Sobre o Evento</h3>
+                <h3 id="description-title">Sobre o Evento:</h3>
                 <p class="event-description">{{$event->description}}</p>
             </div>
         </div>
